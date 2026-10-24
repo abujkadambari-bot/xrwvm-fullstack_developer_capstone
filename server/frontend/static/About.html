@@ -1,68 +1,200 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Best Cars Dealership</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #17365d;
+            padding: 15px 30px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #ffc107;
+        }
+
+        .about-header {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .about-header h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .about-header p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .about-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .about-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            line-height: 1.8;
+        }
+
+        .team-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .team-card {
+            background: white;
+            padding: 25px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .team-card img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-card h3 {
+            color: #17365d;
+            font-size: 21px;
+        }
+
+        .team-card p {
+            margin: 8px 0;
+        }
+
+        .team-card a {
+            color: #1769aa;
+            overflow-wrap: anywhere;
+        }
+
+        .footer {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+<body>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+    <nav class="navbar">
+        <a href="/">Best Cars</a>
+        <a href="/">Home</a>
+        <a href="/about/" class="active">About Us</a>
+        <a href="/contact/">Contact Us</a>
+    </nav>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
+    <header class="about-header">
+        <h1>About Us</h1>
+        <p>
+            Welcome to Best Cars Dealership, your trusted destination for
+            quality domestic and imported vehicles at competitive prices.
+            We help customers find the right car with confidence.
+        </p>
+    </header>
 
+    <main class="about-container">
+        <section class="about-content">
+            <h2>Who We Are</h2>
+            <p>
+                Best Cars is a customer-focused automobile dealership committed
+                to making car buying simple, transparent, and enjoyable.
+                Our collection includes reliable family cars, stylish sedans,
+                versatile SUVs, and selected premium vehicles.
+            </p>
+
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to provide dependable vehicles, honest guidance,
+                and excellent customer service throughout the car-buying journey.
+                We believe every customer deserves clear information and a
+                vehicle that suits their needs and budget.
+            </p>
+
+            <h2>Why Choose Best Cars?</h2>
+            <ul>
+                <li>A carefully selected range of domestic and imported cars.</li>
+                <li>Friendly assistance throughout the buying process.</li>
+                <li>Transparent vehicle information and competitive pricing.</li>
+                <li>Customer-focused after-sales support.</li>
+            </ul>
+        </section>
+
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <p>Our team is here to help you make an informed decision.</p>
+
+            <div class="team-grid">
+                <article class="team-card">
+                    <img src="/static/person.png" alt="Raj Mehta, Dealership Manager">
+                    <h3>Raj Mehta</h3>
+                    <p><strong>Dealership Manager</strong></p>
+                    <p>Oversees daily operations and customer satisfaction.</p>
+                    <p><a href="mailto:raj.mehta@bestcars.example">raj.mehta@bestcars.example</a></p>
+                </article>
+
+                <article class="team-card">
+                    <img src="/static/person.png" alt="Priya Sharma, Sales Consultant">
+                    <h3>Priya Sharma</h3>
+                    <p><strong>Sales Consultant</strong></p>
+                    <p>Helps customers compare vehicles and choose suitable options.</p>
+                    <p><a href="mailto:priya.sharma@bestcars.example">priya.sharma@bestcars.example</a></p>
+                </article>
+
+                <article class="team-card">
+                    <img src="/static/person.png" alt="Arjun Patel, Customer Relations Executive">
+                    <h3>Arjun Patel</h3>
+                    <p><strong>Customer Relations Executive</strong></p>
+                    <p>Assists customers with enquiries and dealership services.</p>
+                    <p><a href="mailto:arjun.patel@bestcars.example">arjun.patel@bestcars.example</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Best Cars Dealership. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
+
